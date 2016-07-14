@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "QuartzLines.h"
+
+
 
 @interface ViewController ()
+
+
 
 @end
 
@@ -16,12 +21,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    QuartzLineView *lineView = [[QuartzLineView alloc]initWithFrame:self.view.frame];
+    [self.view addSubview:lineView];
+    NSString *str = @"wozaina";
+//    weakify(str);
+//    NSLog(@"%@",weak__str);
+#if DEBUG
+    NSLog(@"%@",str);
+#endif
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 @end

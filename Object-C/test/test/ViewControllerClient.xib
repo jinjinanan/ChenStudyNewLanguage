@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerClient">
+            <connections>
+                <outlet property="address" destination="gBw-zu-pdm" id="q4J-yl-d3n"/>
+                <outlet property="editMessage" destination="ZQm-fo-zNO" id="LLr-e4-sI9"/>
+                <outlet property="portTF" destination="hXq-Fq-Z3Q" id="JoO-tD-30b"/>
+                <outlet property="sendMessage" destination="rnL-Cp-EEM" id="P0h-Fc-Dhv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99d-nN-Eat">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="连接"/>
+                    <variation key="heightClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="114" y="178" width="30" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="connectAction:" destination="-1" eventType="touchUpInside" id="ciZ-pg-mxw"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="127.0.0.1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gBw-zu-pdm">
+                    <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="heightClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="106" y="103" width="102" height="30"/>
+                    </variation>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8080" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hXq-Fq-Z3Q">
+                    <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="heightClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="252" y="103" width="97" height="30"/>
+                    </variation>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZQm-fo-zNO">
+                    <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="heightClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="109" y="239" width="97" height="30"/>
+                    </variation>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnL-Cp-EEM">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="发送消息"/>
+                    <variation key="heightClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="114" y="319" width="60" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="sendMessageAction:" destination="-1" eventType="touchUpInside" id="bqs-qE-E1Y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVJ-8j-IYh">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="返回服务器"/>
+                    <variation key="heightClass=regular" fixedFrame="YES">
+                        <rect key="frame" x="114" y="600" width="75" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="toServeView:" destination="-1" eventType="touchUpInside" id="s06-Rj-5Zj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="99d-nN-Eat"/>
+                    <exclude reference="gBw-zu-pdm"/>
+                    <exclude reference="hXq-Fq-Z3Q"/>
+                    <exclude reference="ZQm-fo-zNO"/>
+                    <exclude reference="rnL-Cp-EEM"/>
+                    <exclude reference="aVJ-8j-IYh"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular">
+                <mask key="subviews">
+                    <include reference="99d-nN-Eat"/>
+                    <include reference="gBw-zu-pdm"/>
+                    <include reference="hXq-Fq-Z3Q"/>
+                    <include reference="ZQm-fo-zNO"/>
+                    <include reference="rnL-Cp-EEM"/>
+                    <include reference="aVJ-8j-IYh"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

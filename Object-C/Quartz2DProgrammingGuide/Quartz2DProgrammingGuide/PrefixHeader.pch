@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  Quartz2DProgrammingGuide
+//
+//  Created by JSB_02 on 16/7/8.
+//  Copyright © 2016年 JSB_02. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+#define weakify(object) __weak __typeof__(object) weak##__##object = object
+
+#endif /* PrefixHeader_pch */
+
+
+
+
+#if DEBUG
+    #define NSLOG(object)   NSLog(@"%@",object)
+#endif

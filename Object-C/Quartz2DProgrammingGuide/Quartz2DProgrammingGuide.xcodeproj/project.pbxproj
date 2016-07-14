@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		591417601D2CA9FE0018B108 /* QuartzLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 5914175F1D2CA9FE0018B108 /* QuartzLines.m */; };
 		59BC15781D2B62C8006973FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BC15771D2B62C8006973FA /* main.m */; };
 		59BC157B1D2B62C8006973FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BC157A1D2B62C8006973FA /* AppDelegate.m */; };
 		59BC157E1D2B62C8006973FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BC157D1D2B62C8006973FA /* ViewController.m */; };
 		59BC15811D2B62C8006973FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59BC157F1D2B62C8006973FA /* Main.storyboard */; };
 		59BC15831D2B62C8006973FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59BC15821D2B62C8006973FA /* Assets.xcassets */; };
 		59BC15861D2B62C8006973FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59BC15841D2B62C8006973FA /* LaunchScreen.storyboard */; };
+		59BC15921D2BA5DC006973FA /* QuartzView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BC15911D2BA5DC006973FA /* QuartzView.m */; };
+		59BC159E1D2BA7E0006973FA /* QuartzRendering.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BC159D1D2BA7E0006973FA /* QuartzRendering.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5914175E1D2CA9FE0018B108 /* QuartzLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzLines.h; sourceTree = "<group>"; };
+		5914175F1D2CA9FE0018B108 /* QuartzLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzLines.m; sourceTree = "<group>"; };
+		59523B6C1D2F35D0007BF37A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		59BC15731D2B62C8006973FA /* Quartz2DProgrammingGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quartz2DProgrammingGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59BC15771D2B62C8006973FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		59BC15791D2B62C8006973FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +32,10 @@
 		59BC15821D2B62C8006973FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59BC15851D2B62C8006973FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59BC15871D2B62C8006973FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59BC15901D2BA5DC006973FA /* QuartzView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzView.h; sourceTree = "<group>"; };
+		59BC15911D2BA5DC006973FA /* QuartzView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzView.m; sourceTree = "<group>"; };
+		59BC159C1D2BA7E0006973FA /* QuartzRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzRendering.h; sourceTree = "<group>"; };
+		59BC159D1D2BA7E0006973FA /* QuartzRendering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzRendering.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		591417611D2CB0AC0018B108 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59BC159C1D2BA7E0006973FA /* QuartzRendering.h */,
+				59BC159D1D2BA7E0006973FA /* QuartzRendering.m */,
+				59BC15901D2BA5DC006973FA /* QuartzView.h */,
+				59BC15911D2BA5DC006973FA /* QuartzView.m */,
+				5914175E1D2CA9FE0018B108 /* QuartzLines.h */,
+				5914175F1D2CA9FE0018B108 /* QuartzLines.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		591417621D2CB0DF0018B108 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				59BC157C1D2B62C8006973FA /* ViewController.h */,
+				59BC157D1D2B62C8006973FA /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
 		59BC156A1D2B62C8006973FA = {
 			isa = PBXGroup;
 			children = (
@@ -58,15 +90,16 @@
 		59BC15751D2B62C8006973FA /* Quartz2DProgrammingGuide */ = {
 			isa = PBXGroup;
 			children = (
+				591417621D2CB0DF0018B108 /* View Controllers */,
+				591417611D2CB0AC0018B108 /* View */,
 				59BC15791D2B62C8006973FA /* AppDelegate.h */,
 				59BC157A1D2B62C8006973FA /* AppDelegate.m */,
-				59BC157C1D2B62C8006973FA /* ViewController.h */,
-				59BC157D1D2B62C8006973FA /* ViewController.m */,
 				59BC157F1D2B62C8006973FA /* Main.storyboard */,
 				59BC15821D2B62C8006973FA /* Assets.xcassets */,
 				59BC15841D2B62C8006973FA /* LaunchScreen.storyboard */,
 				59BC15871D2B62C8006973FA /* Info.plist */,
 				59BC15761D2B62C8006973FA /* Supporting Files */,
+				59523B6C1D2F35D0007BF37A /* PrefixHeader.pch */,
 			);
 			path = Quartz2DProgrammingGuide;
 			sourceTree = "<group>";
@@ -149,8 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59BC159E1D2BA7E0006973FA /* QuartzRendering.m in Sources */,
 				59BC157E1D2B62C8006973FA /* ViewController.m in Sources */,
+				59BC15921D2BA5DC006973FA /* QuartzView.m in Sources */,
 				59BC157B1D2B62C8006973FA /* AppDelegate.m in Sources */,
+				591417601D2CA9FE0018B108 /* QuartzLines.m in Sources */,
 				59BC15781D2B62C8006973FA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +301,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Quartz2DProgrammingGuide/PrefixHeader.pch";
 				INFOPLIST_FILE = Quartz2DProgrammingGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.flyfund.Quartz2DProgrammingGuide;
@@ -276,6 +314,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Quartz2DProgrammingGuide/PrefixHeader.pch";
 				INFOPLIST_FILE = Quartz2DProgrammingGuide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.flyfund.Quartz2DProgrammingGuide;
@@ -302,6 +342,7 @@
 				59BC158C1D2B62C8006973FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
