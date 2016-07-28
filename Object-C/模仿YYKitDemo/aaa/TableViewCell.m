@@ -18,6 +18,13 @@
 -(instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     self.backgroundColor = [UIColor whiteColor];
+    UILabel *testlbl = ({
+        UILabel *label = [[UILabel alloc] init];
+        label.frame = CGRectMake(0, 0, 100, 30);
+        label.text = @"test";
+        label;
+    });
+    [self addSubview:testlbl];
     return self;
 }
 
