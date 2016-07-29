@@ -13,6 +13,7 @@
 		590930831D49B6DA0053458C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590930811D49B6DA0053458C /* Main.storyboard */; };
 		590930851D49B6DA0053458C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590930841D49B6DA0053458C /* Assets.xcassets */; };
 		590930881D49B6DA0053458C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590930861D49B6DA0053458C /* LaunchScreen.storyboard */; };
+		593118B81D4AEC6A009415FD /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593118B71D4AEC6A009415FD /* InputView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		590930841D49B6DA0053458C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		590930871D49B6DA0053458C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		590930891D49B6DA0053458C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		593118B61D4AEC6A009415FD /* InputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
+		593118B71D4AEC6A009415FD /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		590930771D49B6DA0053458C /* VerifyCodeInputBox */ = {
 			isa = PBXGroup;
 			children = (
+				593118B51D4AEC06009415FD /* InputBox */,
 				5909307B1D49B6DA0053458C /* AppDelegate.h */,
 				5909307C1D49B6DA0053458C /* AppDelegate.m */,
 				5909307E1D49B6DA0053458C /* ViewController.h */,
@@ -77,6 +81,15 @@
 				590930791D49B6DA0053458C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		593118B51D4AEC06009415FD /* InputBox */ = {
+			isa = PBXGroup;
+			children = (
+				593118B61D4AEC6A009415FD /* InputView.h */,
+				593118B71D4AEC6A009415FD /* InputView.m */,
+			);
+			path = InputBox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				590930801D49B6DA0053458C /* ViewController.m in Sources */,
+				593118B81D4AEC6A009415FD /* InputView.m in Sources */,
 				5909307D1D49B6DA0053458C /* AppDelegate.m in Sources */,
 				5909307A1D49B6DA0053458C /* main.m in Sources */,
 			);
@@ -300,6 +314,7 @@
 				5909308E1D49B6DA0053458C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
