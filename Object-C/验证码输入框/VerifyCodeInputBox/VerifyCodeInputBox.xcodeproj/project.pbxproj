@@ -13,7 +13,8 @@
 		590930831D49B6DA0053458C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590930811D49B6DA0053458C /* Main.storyboard */; };
 		590930851D49B6DA0053458C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 590930841D49B6DA0053458C /* Assets.xcassets */; };
 		590930881D49B6DA0053458C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 590930861D49B6DA0053458C /* LaunchScreen.storyboard */; };
-		593118B81D4AEC6A009415FD /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593118B71D4AEC6A009415FD /* InputView.m */; };
+		593118BB1D4B5BBE009415FD /* WSVerifyCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 593118BA1D4B5BBE009415FD /* WSVerifyCodeView.m */; };
+		A0DA480F01CAAACB06E084D4 /* libPods-VerifyCodeInputBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D056560F0873CFB6966E9E3F /* libPods-VerifyCodeInputBox.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +28,11 @@
 		590930841D49B6DA0053458C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		590930871D49B6DA0053458C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		590930891D49B6DA0053458C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		593118B61D4AEC6A009415FD /* InputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
-		593118B71D4AEC6A009415FD /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
+		593118B91D4B5BBE009415FD /* WSVerifyCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSVerifyCodeView.h; sourceTree = "<group>"; };
+		593118BA1D4B5BBE009415FD /* WSVerifyCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSVerifyCodeView.m; sourceTree = "<group>"; };
+		80C8CE69A4DF4B15FE8A27D2 /* Pods-VerifyCodeInputBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerifyCodeInputBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VerifyCodeInputBox/Pods-VerifyCodeInputBox.debug.xcconfig"; sourceTree = "<group>"; };
+		D056560F0873CFB6966E9E3F /* libPods-VerifyCodeInputBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VerifyCodeInputBox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A849CC53B6BEB2138696B1 /* Pods-VerifyCodeInputBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VerifyCodeInputBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-VerifyCodeInputBox/Pods-VerifyCodeInputBox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +40,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0DA480F01CAAACB06E084D4 /* libPods-VerifyCodeInputBox.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45F9970016CF468746FF4E36 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80C8CE69A4DF4B15FE8A27D2 /* Pods-VerifyCodeInputBox.debug.xcconfig */,
+				F5A849CC53B6BEB2138696B1 /* Pods-VerifyCodeInputBox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5909306C1D49B6DA0053458C = {
 			isa = PBXGroup;
 			children = (
 				590930771D49B6DA0053458C /* VerifyCodeInputBox */,
 				590930761D49B6DA0053458C /* Products */,
+				45F9970016CF468746FF4E36 /* Pods */,
+				9C857A3E24586C996C0704B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,10 +102,18 @@
 		593118B51D4AEC06009415FD /* InputBox */ = {
 			isa = PBXGroup;
 			children = (
-				593118B61D4AEC6A009415FD /* InputView.h */,
-				593118B71D4AEC6A009415FD /* InputView.m */,
+				593118B91D4B5BBE009415FD /* WSVerifyCodeView.h */,
+				593118BA1D4B5BBE009415FD /* WSVerifyCodeView.m */,
 			);
 			path = InputBox;
+			sourceTree = "<group>";
+		};
+		9C857A3E24586C996C0704B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D056560F0873CFB6966E9E3F /* libPods-VerifyCodeInputBox.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5909308C1D49B6DA0053458C /* Build configuration list for PBXNativeTarget "VerifyCodeInputBox" */;
 			buildPhases = (
+				E25BCE377A353B66CCDC9550 /* [CP] Check Pods Manifest.lock */,
 				590930711D49B6DA0053458C /* Sources */,
 				590930721D49B6DA0053458C /* Frameworks */,
 				590930731D49B6DA0053458C /* Resources */,
+				8DC7B355A6448A7E584B6EA9 /* [CP] Embed Pods Frameworks */,
+				4C8F785F69E0004ECF180FED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,13 +184,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C8F785F69E0004ECF180FED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VerifyCodeInputBox/Pods-VerifyCodeInputBox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DC7B355A6448A7E584B6EA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VerifyCodeInputBox/Pods-VerifyCodeInputBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E25BCE377A353B66CCDC9550 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		590930711D49B6DA0053458C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				590930801D49B6DA0053458C /* ViewController.m in Sources */,
-				593118B81D4AEC6A009415FD /* InputView.m in Sources */,
+				593118BB1D4B5BBE009415FD /* WSVerifyCodeView.m in Sources */,
 				5909307D1D49B6DA0053458C /* AppDelegate.m in Sources */,
 				5909307A1D49B6DA0053458C /* main.m in Sources */,
 			);
@@ -275,6 +350,7 @@
 		};
 		5909308D1D49B6DA0053458C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80C8CE69A4DF4B15FE8A27D2 /* Pods-VerifyCodeInputBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VerifyCodeInputBox/Info.plist;
@@ -286,6 +362,7 @@
 		};
 		5909308E1D49B6DA0053458C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5A849CC53B6BEB2138696B1 /* Pods-VerifyCodeInputBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VerifyCodeInputBox/Info.plist;
