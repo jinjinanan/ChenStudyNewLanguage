@@ -1,0 +1,19 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "ad11adc3b5b798c628bbd4c90574d525"
+build_time: [525871167, 258926000]
+inputs:
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/Action.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/Atomic.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/Bag.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/Disposable.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/Event.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/Flatten.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/FoundationExtensions.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/ObjectiveCBridging.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/Observer.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/Optional.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/Property.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/Scheduler.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/Signal.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/SignalProducer.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/ReactiveCocoa/ReactiveCocoa/Swift/TupleExtensions.swift": [523417065, 0]

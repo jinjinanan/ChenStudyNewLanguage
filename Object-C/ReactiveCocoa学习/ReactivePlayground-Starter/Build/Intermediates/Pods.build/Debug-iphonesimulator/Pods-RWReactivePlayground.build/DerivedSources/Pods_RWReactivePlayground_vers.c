@@ -1,0 +1,1 @@
+ const unsigned char Pods_RWReactivePlaygroundVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_RWReactivePlayground  PROJECT:Pods-1" "\n"; const double Pods_RWReactivePlaygroundVersionNumber __attribute__ ((used)) = (double)1.;

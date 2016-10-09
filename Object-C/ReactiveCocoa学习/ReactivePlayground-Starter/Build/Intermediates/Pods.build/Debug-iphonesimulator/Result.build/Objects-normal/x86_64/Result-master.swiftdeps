@@ -1,0 +1,6 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.1 clang-703.0.29)"
+options: "bee1d43d03998d53af35cda045a22aa4"
+build_time: [525871163, 736699000]
+inputs:
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/Result/Result/Result.swift": [523417065, 0]
+  "/Users/JSB_02/Desktop/ChenStudyNewLanguage/Object-C/ReactiveCocoa\u5B66\u4E60/ReactivePlayground-Starter/Pods/Result/Result/ResultType.swift": [523417065, 0]
