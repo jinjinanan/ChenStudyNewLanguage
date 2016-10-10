@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "Person.h"
+#import "Person+addAttribute.h"
 
+//适配ios10
+//http://www.cnblogs.com/gfxxbk/p/5881453.html
 @interface ViewController ()
+
 
 @end
 
@@ -16,7 +21,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    Person *person = [[Person alloc] init];
+    person.eat = @"fjwgoiqg";
+    NSLog(@"%@", person.eat);
 }
 
 

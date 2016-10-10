@@ -10,4 +10,6 @@
 
 @interface Person (addAttribute)
 
+@property (nonatomic, copy)NSString *eat;
+
 @end
